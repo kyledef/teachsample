@@ -5,7 +5,7 @@
  */
  
  //  We create a global object that will be used to store the configuration information for the different components of the system
- global $CFG;
+ global $CFG; //Declaring a global variable called CFG (whih
  $CFG = new stdClass();
  
  //Database Properties (Customize these values based on local installation)
