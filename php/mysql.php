@@ -3,7 +3,7 @@
  * Author: Kyle E. DeFreitas
  * License: GNU GPLv3
  */
-require_once './config.php';
+require_once dirname(__FILE__) .'/config.php';
 
 /**
  * This function will demonstrate the ability to connect to the MYSQL database
@@ -35,5 +35,5 @@ function connect_to_db_proc()
 }
 
 // var_dump(connect_to_db_obj());
-var_dump(connect_to_db_proc());
+//var_dump(connect_to_db_proc());
 
