@@ -22,29 +22,37 @@
 
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
-                <h1>Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+                <h2>INFO3410 2013</h2>
+                <p>The Summer offering of the Course</p>
             </div>
 
             <!-- Example row of columns -->
             <div class="row">
                 <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                    <h2>Section 1 - Products</h2>
+                    <p>The products will give a listing of all products and services available and offered</p>
+                    <p><a class="btn" href="#">Products &raquo;</a></p>
                 </div>
                 <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                    <h2>Section 2 - About</h2>
+                    <p>The about page will give more information about the site</p>
+                    <p><a class="btn" href="about.php">More &raquo;</a></p>
                </div>
                 <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                    <h2>Section 3 - Contact</h2>
+                    <p>This is a contact page. The contact page will give information about </p>
+                    <p><a class="btn" href="contact.php">More &raquo;</a></p>
                 </div>
-            </div>           
+            </div>   
+            <hr>
+            <div class="row">
+				<div class="span6">
+					<p class="text-center">The span6 splits the page in a half</p>
+				</div>
+				<div class="span6">
+					<p class="text-center">These two sections should be the same size</p>
+				</div>
+            </div>        
 
         </div> <!-- /container -->
 <?php include "./pg_parts/footer.php"; ?>
