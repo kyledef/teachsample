@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Author: Kyle E. DeFreitas
  * License: GNU GPLv3

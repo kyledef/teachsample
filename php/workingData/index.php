@@ -1,5 +1,5 @@
 <?php 
-$pagename = "graphs";
+$pagename = "home";
 /**
  * Author: Kyle E. DeFreitas
  * License: GNU GPLv3
