@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL);
+
 function get_connection()
 {
 	$mysqli = NULL;
@@ -31,6 +33,31 @@ function save_organization($name, $address, $type, $country, $description)
 	}
 }
 
+
+function get_organization($query)
+{
+	
+	$results = array();
+
+	$mysqli = get_connection();
+	if (!is_null($mysqli))
+	{
+		$stmt = $mysqli->prepare("selet * from organizations limit=? offset=?");
+		if ($stmt)
+		{
+			$stmt->bind("ii", 10,10);
+			$stmt->execute();
+			$res = $stmt->get_result();
+			while($row = $res->fetch_array(MYSQLI_ASSOC)) 
+			{
+  				array_push($results, $row);
+			}
+		}
+	}
+	return $results;
+}
+
+
 //if the form is submitted then perform POST operations
 if (isset($_POST['name']) 
 	&& isset($_POST['address']) 
@@ -43,6 +70,6 @@ if (isset($_POST['name'])
 
 }else{
 	//else perform the GET operations
-
+	echo json_encode(get_organization());
 }
 
